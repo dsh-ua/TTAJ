@@ -55,4 +55,8 @@ public class EmailCheckerTest {
         assertFalse(EmailChecker.checkEmail("user.name@gmail.c_om"));
         assertFalse(EmailChecker.checkEmail("user.name@gmail.12"));
     }
+    @Test
+    public void testNullString (){
+        assertFalse(EmailChecker.checkEmail(null));
+    }
 }

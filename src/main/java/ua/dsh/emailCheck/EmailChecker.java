@@ -6,6 +6,9 @@ public class EmailChecker {
     private static final Pattern EMAIL_PATTERN = Pattern.compile(
             "^[a-zA-Z][a-zA-Z0-9.]*[a-zA-Z0-9]@[a-zA-Z0-9]{2,}(\\.[a-zA-Z]{2,})+$");
     public static boolean checkEmail(String text) {
+        if (text == null) {
+        return false;
+        }
         Matcher matcher = EMAIL_PATTERN.matcher(text);
         return matcher.matches();
     }
