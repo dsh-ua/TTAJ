@@ -1,4 +1,4 @@
-package ua.dsh.pageObjectApproach.opencart.data;
+package ua.dsh.pageObjectApproach.data;
 
 public enum Currencies {
 	DEFAULT_CURRENCY("US Dollar", "$"),

@@ -1,4 +1,4 @@
-package ua.dsh.pageObjectApproach.opencart.pages;
+package ua.dsh.pageObjectApproach.pages;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;

@@ -1,4 +1,4 @@
-package ua.dsh.pageObjectApproach.opencart.pages;
+package ua.dsh.pageObjectApproach.pages;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -6,8 +6,6 @@ import java.util.List;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
 
 public class DropdownComponent {
 

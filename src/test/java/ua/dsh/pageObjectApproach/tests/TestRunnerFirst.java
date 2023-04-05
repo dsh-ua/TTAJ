@@ -1,14 +1,15 @@
-package ua.dsh.pageObjectApproach.opencart.tests;
-import ua.dsh.pageObjectApproach.opencart.pages.HomePage;
+package ua.dsh.pageObjectApproach.tests;
+import ua.dsh.pageObjectApproach.pages.HomePage;
 import io.github.bonigarcia.wdm.WebDriverManager;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.annotations.*;
+
 import java.time.Duration;
 
 public abstract class TestRunnerFirst {
     private final String BASE_URL = "https://demo.opencart.com/";
-    private final Long IMPLICITLY_WAIT_SECONDS = 10L;
+    private final Long IMPLICITLY_WAIT_SECONDS = 4L;
     private final Long ONE_SECOND_DELAY = 1000L;
     private WebDriver driver;
     protected void presentationSleep() {

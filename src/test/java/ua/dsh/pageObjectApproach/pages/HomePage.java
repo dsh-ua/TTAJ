@@ -1,5 +1,5 @@
-package ua.dsh.pageObjectApproach.opencart.pages;
-import ua.dsh.pageObjectApproach.opencart.data.Currencies;
+package ua.dsh.pageObjectApproach.pages;
+import ua.dsh.pageObjectApproach.data.Currencies;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;

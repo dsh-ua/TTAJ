@@ -1,4 +1,4 @@
-package ua.dsh.pageObjectApproach.opencart.pages;
+package ua.dsh.pageObjectApproach.pages;
 
 //import com.softserve.edu.opencart.data.Product;
 import org.openqa.selenium.By;
