@@ -1,25 +1,17 @@
 package ua.dsh.WebDriverWaits;
-
 import java.time.Duration;
 import java.util.List;
-import java.util.concurrent.TimeUnit;
-import java.util.function.Function;
 import io.github.bonigarcia.wdm.WebDriverManager;
 import org.openqa.selenium.By;
-import org.openqa.selenium.NoSuchElementException;
-import org.openqa.selenium.TimeoutException;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
-import org.openqa.selenium.interactions.Actions;
-import org.openqa.selenium.support.ui.*;
 import org.testng.annotations.AfterClass;
-import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.BeforeSuite;
 import org.testng.annotations.Test;
-import org.testng.Assert;
+
 public class WebDriverWaitsTask {
     private final String BASE_URL = "https://devexpress.github.io/devextreme-reactive/react/grid/docs/guides/filtering/";
     private final Long IMPLICITLY_WAIT_SECONDS = 10L;
@@ -44,7 +36,6 @@ public class WebDriverWaitsTask {
     @BeforeClass
     public void beforeClass() {
         driver = new ChromeDriver();
-        //driver.manage().timeouts().implicitlyWait(IMPLICITLY_WAIT_SECONDS, TimeUnit.SECONDS);
         driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(IMPLICITLY_WAIT_SECONDS));
         driver.manage().window().maximize();
     }
@@ -64,10 +55,7 @@ public class WebDriverWaitsTask {
     private void closePopup() {
         presentationSleep(); // For Presentation ONLY
         driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(3));
-        //long timeStart = System.currentTimeMillis();
         List<WebElement> footerButton = driver.findElements(By.xpath("//footer[contains(@class,'cookie')]//button"));
-        //System.out.println("***footerButton.size() = " + footerButton.size());
-        //System.out.println("***time = " + (System.currentTimeMillis() - timeStart));
         if (footerButton.size() > 0) {
             footerButton.get(0).click();
             presentationSleep(); // For Presentation ONLY
