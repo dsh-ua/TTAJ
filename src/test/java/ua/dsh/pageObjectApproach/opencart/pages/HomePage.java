@@ -20,7 +20,7 @@ public class HomePage extends TopPart {
 
     private void initElements() {
         // init elements
-        slideshow0 = driver.findElement(By.id("slideshow0"));
+        slideshow0 = driver.findElement(By.cssSelector("#carousel-banner-0"));
         productsContainer = new ProductsContainer(driver);
 
     }
